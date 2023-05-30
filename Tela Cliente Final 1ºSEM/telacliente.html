@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="telacliente.css">
+    <link rel="icon" href="img/logo pv.png">
+    <link rel="stylesheet" media="(min-width: 768px)" href="telacliente.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@40,400,0,0" />
+    <title>Seu Perfil</title>
+</head>
+<header>
+    <div class="divinfo">
+        <p class="pend">Avenida Sapopemba, 3278 - São Matheus - São Paulo - SP
+            <img class="whatsapp" src="img/wppicon.png" alt=""> (11)962760983 Tel. 2368-6384
+        </p>
+    </div>
+
+    <div class="divnav">
+        <img class="logo" src="img/logo pv.png" alt="">
+        <nav>
+            <a href="#" style="text-decoration: none;" class="navHeader" class="selected" onclick="clicou(this)"><span>
+                    HOME</span></a>
+        </nav>
+        <nav>
+            <a href="#" style="text-decoration: none;" class="navHeader" onclick="clicou(this)"> <span>QUEM
+                    SOMOS</span></a>
+        </nav>
+        <nav>
+            <a href="#" style="text-decoration: none;" class="navHeader" onclick="clicou(this)">
+                <span>SERVIÇOS</span></a>
+        </nav>
+        <button class="botao-entre">
+            <a href="#" class="entreaq" style="text-decoration: none;" class="navHeader" onclick="clicou(this)">MEU
+                PERFIL</a>
+        </button>
+    </div>
+</header>
+
+
+<body>
+
+
+    <section class="row-principal">
+        <div class="conf-itens">
+            <div class="column-icon">
+                <img src="img/icon-client.png" alt="" width="250px" height="250px">
+            </div>
+            <div class="text-information">
+                <h1 id="name-client">NOME DO CLIENTE</h1>
+                <P id="itr-client">CPF: XXX.XXX.XXX-XX</P>
+                <p id="email-client">EMAIL: CLIENT@GMAIL.COM</p>
+                <P id="adress-client">ENDEREÇO: RUA DO CLIENTE</P>
+                <button id="button-check-appointment"><a href="">MARQUE SUA CONSULTA AQUI</a></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="row-secundary">
+        <div class="first-buttons">
+            <button id="att-cad">EDITAR PERFIL<span class="material-icons md-18">edit</span></button>
+        </div>
+        <div class="second-buttons">
+            <button id="my-appointment">MINHAS CONSULTAS
+                <span class="material-symbols-sharp">clinical_notes</span></button>
+        </div>
+        <div id="edit-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>EDITE SEU PERFIL</h2>
+                <div id='edit-logo'><img src="img/logo pv.png" alt="" height="138"></div>
+                <form>
+                    <label for="username">Nome Completo:</label>
+                    <label id="name-block">NOME DO CLIENTE</label><br></br>
+                    <label for="password">CPF:</label>
+                    <label id="password-block">XXX.XXX.XXX-XX</label><br></br>
+                    <label>E-MAIL: <input type="email" placeholder=" Digite o novo e-mail"> <input type="email"
+                            placeholder="Confirme o novo e-mail"></label><br></br>
+                    <label>TELEFONE: <input type="text" placeholder=" Digite o novo número" id="telefone"> <input
+                            type="text" placeholder="Confirme o novo número" id="telefone1"></label><br></br>
+                    <label for="adress">ENDEREÇO: </label>
+                    <input type="text" placeholder=" Digite o novo endereço"> <input type="number" placeholder=" Nº"
+                        id="nº"> CEP <input maxlength="8" type="text" id="cep" name="cep"
+                        placeholder="00000-000" /><br></br>
+                    <div id="button-submit"><button class='button-submit' type="submit">SALVAR</button></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="row-third">
+        <div class="calendar">
+            <img src="img/calendar3.png" alt="" width="88px" height="88px">
+        </div>
+        <div class="conf-appointment">
+            <div class="text-information2">
+                <P id="name-doctor">MEDICO: XXXX</P>
+                <p id="date-appointment">DATA: DD/MM/YYYY</p>
+                <P id="time-appointment">HORARIO: HH/MM</P>
+                <p id="services">SERVIÇOS: ......(>)</p>
+
+            </div>
+            <div class="div-button"><button class="button-confirm-appointment initialColor"
+                    onclick="alterarTexto(this)">CONCLUIR CONSULTA </button>
+
+            </div>
+    </section>
+    <span class="material-symbols-sharp" id="icon-exit">
+        logout
+    </span>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
+    <script src="edit.js"></script>
+    
+
+</body>
+
+</html>

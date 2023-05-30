@@ -1,0 +1,467 @@
+/* corpo da pagina */
+body {
+    background: linear-gradient(to bottom right, #ACD0DC, #ABD0DB, #D5DDF0, #C6D8E9, #D9DFF3);
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: auto;
+    background-color: #b4e6fa, #3b7197;
+    /* background-image: url(/img/imgback.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+
+}
+
+header{
+    background-color: white;
+    color: #3b7197;
+    width: 100%;
+    flex-direction: column;
+    /* position: sticky; */
+    z-index: 1;
+    margin-bottom: 23px;
+}
+.navHeader{ /*botoes da header */
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+} 
+.navHeader:hover, .selected{/*Quando o cursor passar por cima da nav a cor do link ficará preta e o tamanho da letra aumentada*/
+    color: black;
+    font-weight: 900;
+}
+button:hover {/*dar um zoom assim que o cursor passar do cima do botão (ENTRE AQUI)*/
+    transform: scale(1.1);
+    transition: all 0.5s;
+} 
+
+.divinfo{
+    
+    background-color: #b7eafd;
+    height: 20px;
+    margin-top: 0px;
+    color: #3b7197;
+    
+}
+.pend{
+    text-align: center;
+    margin: 0;
+}
+.whatsapp{
+    width: 15px;
+    height: 15px;
+
+}
+.divnav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    color: #3b7197;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;                           
+}
+nav :hover{
+    color:#000 ;
+}
+
+.logo{
+    width: 80px;
+    
+}
+a{
+    text-decoration: none;
+    color: #3b7197;;
+    
+}
+button{
+ 
+	
+	border-radius: 30px;
+	border:1px solid #000;
+	height: 50px;
+	width: 120px;
+	font: bold 15px arial,sans-serif;
+	
+}
+
+.entreaq:hover{
+    color: #3b7197;
+   
+}
+.botao-entre{
+    background-color: #d7eafd;
+}
+/* barra de navegação
+.nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    max-width: 1920px;
+    background-color: white;
+    margin-top: 20px;
+    position: sticky;
+    top: 0;
+}
+/* 
+/* tirar o sublinhado das tag link "a" */
+/* .nav a {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 120%;
+    color: #3b7197;
+    justify-content: space-around;
+} */
+
+/* estilizando o botao do "Entre Aqui" */
+/* .nav button {
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 40px;
+    background-color: #a8dbf0;
+    padding: 15px;
+} */
+
+/*  hover nos link */
+/* a:hover {
+    color: black;
+} */
+
+/* ajeitando o tamanho da imagem(logo) */
+/* .nav img {
+    width: 50%;
+} */ */ */
+
+.row-principal {
+    /* border: 3px solid red; */
+    width: 100%;
+    height: auto;
+    margin: auto;
+    max-width: 1920px;
+    margin-top: 20px;
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: center;
+
+}
+
+.conf-itens {
+    /* border: 1px solid rgb(0, 250, 187); */
+    border-radius: 25px;
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: center;
+    margin: auto;
+    background-color: white;
+    width: 50%;
+    box-shadow: 0 0 7px 0.5px black;
+    height: 290px;
+}
+
+.column-icon {
+    /* border: 2px solid rgb(0, 255, 0); */
+    /* background-color: white; */
+    padding: 20px;
+    /* border-top-left-radius: 23px;
+    border-bottom-left-radius: 23px; */
+
+}
+
+
+.text-information {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* background-color: white; */
+    padding: 20px;
+    /* border: 2px solid orange; */
+    width: 100%;
+    text-align: justify;
+    /* border-top-right-radius: 23px;
+    border-bottom-right-radius: 23px; */
+
+
+}
+
+#button-check-appointment {
+    position: relative;
+    left: 60%;
+    bottom: 15%;
+    border-radius: 30px;
+    background-color: #d7eafd;
+    height: 100px;
+    width: 200px;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #3b7197;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: #3b7197
+}
+
+.row-secundary {
+    /* border: 3px solid black; */
+    width: 100%;
+    height: auto;
+    margin: auto;
+    max-width: 1920px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.first-buttons {
+    /* border: 2px solid salmon; */
+    width: 50%;
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+#att-cad{
+    width: 30%;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 7px 0.5px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.second-buttons {
+    /* border: 2px solid brown; */
+    width: 50%;
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: center;
+    
+}
+
+#my-appointment{
+    width: 30%;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 7px 0.5px;
+    cursor: pointer;
+    background-color: white;
+    }
+
+.material-icons.md-18{
+    position: relative;
+    left: 42px;
+    text-align: center;
+}
+
+.material-symbols-sharp{
+    /* position: relative; */
+    left: 10px;
+    margin: 10px;
+}
+
+.row-third {
+    /* border: 3px solid red; */
+    width: 100%;
+    height: auto;
+    margin: auto;
+    max-width: 1920px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   
+}
+
+.conf-appointment {
+    /* border: 3px solid rgb(255, 217, 0); */
+    border-radius: 25px;
+    display: flex;
+    background-color: white;
+    width: 50%;
+    box-shadow: 0 0 7px 0.5px black;
+    height: 290px;
+}
+
+.button-confirm-appointment {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    bottom: 15%;
+    border-radius: 30px;
+    background-color: #c7ffb6;
+    height: 20%;
+    width: 40%;
+    font-size: 18px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #005f10;
+    border: none;
+    cursor: pointer;
+}
+
+.text-information2 {
+    /* border: 4px solid rgb(89, 0, 255); */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* background-color: white; */
+    padding: 20px;
+    /* border: 2px solid orange; */
+    width: 50%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    /* border-top-right-radius: 23px;
+    border-bottom-right-radius: 23px; */
+}
+#icon-exit{
+    font-size: 50px;
+    display: flex;
+    justify-content: start;
+    width: 2.6%;
+    border-radius: 10px;
+    max-width: 1920px;
+    height: auto;
+    cursor: pointer;
+    background-color: white;
+}
+
+#icon-exit:hover{
+    transform: scale(1.1);
+}
+
+.button-confirm-appointment:hover{
+    transform: scale(1.1);
+}
+
+#my-appointment:hover{
+    transform:scale(1.1);
+}
+
+#att-cad:hover{
+    transform: scale(1.1);
+}
+
+#button-check-appointment:hover{
+    transform: scale(1.1);
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+	background-color: #fefefe;
+	margin: 15% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 40%;
+    border-radius: 25px;
+    color: #3b7197;
+    font-weight: bolder 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2{
+    color:#3b7197;
+    text-align: center;
+}
+
+.close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#name-block{
+    color: #888;
+}
+
+#password-block{
+    color: #888;
+}
+
+#edit-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+#button-submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.button-submit{
+    width: 30%;
+    height: 50px;
+    border-radius: 40px;
+    border: none;
+    background-color: #3b7197;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.button-submit:hover{
+    transform: scale(1.1);
+}
+
+.calendar{
+    /* border: 3px solid fuchsia; */
+    height: 50%;
+    margin-right: 10px;
+}
+
+
+.div-button{
+    /* border: 3px solid pink ; */
+    width: 50%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: end;
+    margin-right: 2%;
+    justify-content: end;
+}
+
+
+.initialColor  {
+    background-color: rgb(218, 75, 39);
+    color: white;
+    text-align: center;
+    margin-bottom: 10PX;
+}
+
+.botao-selecionado2{
+    background-color: #c7ffb6;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+margin-bottom: 10PX;
+  
+  }
+
